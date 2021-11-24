@@ -21,17 +21,27 @@ namespace CDR.DataHolder.Admin.API.Controllers
         [HttpGet("v1/admin/metrics")]
         [ApiVersion("1")]
         [HttpGet]
-        public string GetMetrics()
+        public async Task GetMetrics()
         {
-            return "{}";
+            _logger.LogInformation($"Request received to {nameof(AdminController)}.{nameof(GetMetrics)}");
+            var json = await System.IO.File.ReadAllTextAsync("Data/allResponse.json");
+
+            // Return the raw JSON response.
+            Response.ContentType = "application/json";
+            await Response.BodyWriter.WriteAsync(System.Text.UTF8Encoding.UTF8.GetBytes(json));
         }
 
         [HttpGet("v1/admin/metrics")]
         [ApiVersion("2")]
         [HttpGet]
-        public string GetMetricsV2()
+        public async Task GetMetricsV2()
         {
-            return "{}";
+            _logger.LogInformation($"Request received to {nameof(AdminController)}.{nameof(GetMetricsV2)}");
+            var json = await System.IO.File.ReadAllTextAsync("Data/allResponse.json");
+
+            // Return the raw JSON response.
+            Response.ContentType = "application/json";
+            await Response.BodyWriter.WriteAsync(System.Text.UTF8Encoding.UTF8.GetBytes(json));
         }
     }
 }

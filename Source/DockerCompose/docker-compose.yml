@@ -8,7 +8,7 @@
 # Then flush the DNS cache, on Windows use: ipconfig /flushdns
 ################################################################################
 
-version: '3.8'
+version: '3.9'
 
 services:      
 
@@ -24,6 +24,8 @@ services:
 
   mock-data-holder:
     container_name: mock-data-holder
+    volumes:
+      - /Users/mechavarria/Documents/personalWS/git/open-source/mock-data-holder/Source/build:/app/manage/Data
     image: consumerdataright/mock-data-holder
     ports: 
       - "8000:8000"

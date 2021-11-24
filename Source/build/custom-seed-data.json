@@ -1,0 +1,124 @@
+{
+    "Customers": [
+        {
+            "CustomerID": "4ee1a8db-13af-44d7-b54b-e94dff3df548",
+            "CustomerUType": "PERSON",
+            "LoginId": "mechavarria",
+            "Person": {
+                "PersonID": "be36d5b8-8d92-4076-81c1-2260ba7e7272",
+                "FirstName": "Mariano",
+                "LastName": "Echavarria",
+                "MiddleNames": "",
+                "Prefix": "Mr",
+                "Suffix": "",
+                "OccupationCode": "",
+                "OccupationCodeVersion": "",
+                "LastUpdateTime": "2021-04-30T08:00:00Z"
+            },
+            "Accounts": [
+                {
+                    "AccountId": "1122334455",
+                    "CreationDate": "2015-01-01",
+                    "DisplayName": "Savings Account",
+                    "NickName": "Savings",
+                    "OpenStatus": "OPEN",
+                    "MaskedName": "xxx-xxx xxxxx455",
+                    "ProductCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+                    "ProductName": "Everyday Savings",
+                    "Transactions": [
+                        {
+                            "TransactionId": "TRN12345",
+                            "TransactionType": "TRANSFER_OUTGOING",
+                            "Status": "POSTED",
+                            "Description": "Pay anyone",
+                            "PostingDateTime": "2021-04-26T08:31:00Z",
+                            "ValueDateTime": "2021-04-26T08:31:00Z",
+                            "ExecutionDateTime": "2021-04-26T08:31:00Z",
+                            "Amount": 321.00,
+                            "Currency": "AUD",
+                            "Reference": "INV-12345",
+                            "MerchantName": "",
+                            "MerchantCategoryCode": "",
+                            "BillerCode": "",
+                            "BillerName": "",
+                            "CRN": "",
+                            "ApcaNumber": ""
+                        },
+                        {
+                            "TransactionId": "TRN98765",
+                            "TransactionType": "TRANSFER_INCOMING",
+                            "Status": "PENDING",
+                            "Description": "Transfer",
+                            "PostingDateTime": "",
+                            "ValueDateTime": "",
+                            "ExecutionDateTime": "2021-05-01T12:44:00Z",
+                            "Amount": 100.00,
+                            "Currency": "AUD",
+                            "Reference": "IOU",
+                            "MerchantName": "",
+                            "MerchantCategoryCode": "",
+                            "BillerCode": "",
+                            "BillerName": "",
+                            "CRN": "",
+                            "ApcaNumber": ""
+                        },
+                        {
+                            "TransactionId": "TRN11111",
+                            "TransactionType": "INTEREST_PAID",
+                            "Status": "POSTED",
+                            "Description": "Monthly interest",
+                            "PostingDateTime": "2021-05-01T18:00:00Z",
+                            "ValueDateTime": "2021-05-01T18:00:00Z",
+                            "ExecutionDateTime": "2021-05-01T18:00:00Z",
+                            "Amount": 0.53,
+                            "Currency": "AUD",
+                            "Reference": "April 2021",
+                            "MerchantName": "",
+                            "MerchantCategoryCode": "",
+                            "BillerCode": "",
+                            "BillerName": "",
+                            "CRN": "",
+                            "ApcaNumber": ""
+                        },
+                        {
+                            "TransactionId": "TRN99999",
+                            "TransactionType": "PAYMENT",
+                            "Status": "POSTED",
+                            "Description": "BPAY",
+                            "PostingDateTime": "2021-05-03T09:04:00Z",
+                            "ValueDateTime": "2021-05-03T09:04:00Z",
+                            "ExecutionDateTime": "2021-05-03T09:04:00Z",
+                            "Amount": 50.00,
+                            "Currency": "AUD",
+                            "Reference": "REF 12345",
+                            "MerchantName": "",
+                            "MerchantCategoryCode": "",
+                            "BillerCode": "78765",
+                            "BillerName": "ShoppingXpress",
+                            "CRN": "",
+                            "ApcaNumber": ""
+                        },
+                        {
+                            "TransactionId": "TRN11112",
+                            "TransactionType": "PAYMENT",
+                            "Status": "POSTED",
+                            "Description": "EFTPOS",
+                            "PostingDateTime": "2021-05-05T17:22:00Z",
+                            "ValueDateTime": "2021-05-05T17:22:00Z",
+                            "ExecutionDateTime": "2021-05-05T17:22:00Z",
+                            "Amount": 77.82,
+                            "Currency": "AUD",
+                            "Reference": "EFTPOS",
+                            "MerchantName": "Supermarket A",
+                            "MerchantCategoryCode": "5411",
+                            "BillerCode": "",
+                            "BillerName": "",
+                            "CRN": "",
+                            "ApcaNumber": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

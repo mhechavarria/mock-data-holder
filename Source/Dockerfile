@@ -20,6 +20,9 @@ COPY ./CDR.DataHolder.Resource.API/. /app/CDR.DataHolder.Resource.API
 COPY ./CDR.DataHolder.IdentityServer/. /app/CDR.DataHolder.IdentityServer
 COPY ./CDR.DataHolder.API.Gateway.mTLS/. /app/CDR.DataHolder.API.Gateway.mTLS
 
+COPY ./build/paypal_ca.crt /usr/local/share/ca-certificates/paypal_ca.crt
+RUN update-ca-certificates
+
 WORKDIR /app/CDR.DataHolder.Admin.API
 RUN dotnet publish -c Release -o /app/publish/admin
 WORKDIR /app/CDR.DataHolder.Manage.API
@@ -51,6 +54,8 @@ RUN apt-get update && apt-get install -y supervisor
 RUN apt-get update && apt-get install -y sudo
 
 RUN sudo cp ./gateway-mtls/Certificates/ca.crt /usr/local/share/ca-certificates/ca.crt
+
+COPY ./build/paypal_ca.crt /usr/local/share/ca-certificates/paypal_ca.crt
 
 RUN sudo update-ca-certificates
 
